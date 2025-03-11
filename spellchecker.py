@@ -12,7 +12,7 @@ class SpellChecker:
         chars = "\\`*_{}[]()>#+-.!$%^;,=_~?"
         for c in chars:
             txtIn = txtIn.replace(c,"")
-            txtIn = txtIn.replace("'"," ")
+        txtIn = txtIn.replace("'"," ")
         words = txtIn.lower().split()
         listaParoleInput = self.database.searchWord(words,language)
 
